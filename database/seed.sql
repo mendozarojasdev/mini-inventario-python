@@ -1,0 +1,1 @@
+GRANT ALL PRIVILEGES ON inventario.* TO 'inventario'@'localhost' IDENTIFIED BY '123456' WITH GRANT OPTION;

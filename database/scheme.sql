@@ -1,0 +1,11 @@
+CREATE DATABASE inventario;
+
+USE inventario;
+
+CREATE TABLE productos (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	codigo_barras VARCHAR(13) NOT NULL,
+	producto VARCHAR(200) NOT NULL,
+	precio DECIMAL(6, 2) UNSIGNED NOT NULL,
+	existencias INT(4) UNSIGNED NOT NULL
+);
