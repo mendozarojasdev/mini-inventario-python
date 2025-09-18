@@ -1,6 +1,6 @@
 # Mini Inventario 2
 Sistema para control de productos alimenticios desarrollado en Java con CRUD completo y generación de reportes en PDF.
-Disponible como ejecutable `.exe` para **Windows** y como paquete `.deb` para distribuciones **Linux** basadas en **Debian** (probado en Ubuntu).
+Disponible como portable para **Windows** y como paquete `.deb` para distribuciones **Linux** basadas en **Debian**.
 
 ## Tabla de contenido
 - [Características principales](#características-principales)
@@ -8,7 +8,6 @@ Disponible como ejecutable `.exe` para **Windows** y como paquete `.deb` para di
 - [Tecnologías utilizadas](#tecnologías-utilizadas)
 - [Requerimientos](#requerimientos)
 - [Instalación](#instalación)
-- [Desarrollo](#desarrollo)
 - [Licencia](#licencia)
 
 ## Características principales
@@ -42,7 +41,7 @@ Disponible como ejecutable `.exe` para **Windows** y como paquete `.deb` para di
 **Base de datos**
 - MariaDB 12.0.2
 
-#### Requerimientos
+## Requerimientos
 - [Python 3.13.7](https://download.oracle.com/java/23/archive/jdk-23.0.1_windows-x64_bin.exe)
 - [pip](https://pypi.org/project/pip/)
 - [MariaDB 12.0.2](https://mariadb.org/download/)
@@ -54,14 +53,16 @@ Disponible como ejecutable `.exe` para **Windows** y como paquete `.deb` para di
 - Copia y ejecuta el [esquema](database/scheme.sql) que se encuentra en el repositorio.
 - Crea al usuario para el programa ejecutando la instrucción [seed](database/seed.sql).
 
-#### 2. Instala PySide6 y las librerías necesarias.
+#### 2. Instalar PySide6 y librerías necesarias.
 ```bash
 pip install pyside6 mariadb reportlab PyPDF2
 ```
 
-#### 3. Descargar el proyecto
-- Puedes descargar el ejecutable `.exe` más reciente de Mini Inventario 2 desde [GitHub Releases](https://github.com/mendozarojasdev/mini-inventario-python/releases/latest).
+#### 3. Descargar el programa
+- Descarga la versión portable más reciente de Mini Inventario 2 desde [GitHub Releases](https://github.com/mendozarojasdev/mini-inventario-python/releases/latest).
 - Puedes colocar el ejecutable `.exe` en una ubicación p. ej. `C:\Program Files\Mini Inventario 2` y crear un acceso directo en el escritorio.
+
+✅ Listo, ahora podrás iniciar la aplicación desde el acceso directo.
 
 ### Linux (Probado en Ubuntu)
 
@@ -79,7 +80,7 @@ Instala las librerías de Python necesarias con el siguiente comando.
 sudo apt install python3 python3-venv python3-pip
 ```
 
-#### 3. Descargar el proyecto
+#### 3. Descargar el paquete
 Puedes descargar el paquete `.deb` más reciente de Mini Inventario 2 desde [GitHub Releases](https://github.com/mendozarojasdev/mini-inventario-python/releases/latest).
 
 #### 4. Instalar el paquete
@@ -87,6 +88,7 @@ Puedes descargar el paquete `.deb` más reciente de Mini Inventario 2 desde [Git
 ```bash
 sudo dpkg -i mini_inventario_2.deb
 ```
+
 ✅ Listo, ahora podrás iniciar la aplicación desde el menú de aplicaciones.
 
 #### 5. Configuración (opcional)
