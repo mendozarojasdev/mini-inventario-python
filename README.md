@@ -13,7 +13,8 @@ Disponible como ejecutable para **Windows** y como paquete `.deb` para distribuc
 
 ## Características principales
 - CRUD de productos (Crear, Leer, Actualizar, Eliminar).
-- Interfaz gráfica desarrollada con **PySide6**.
+- Conexión a MariaDB para almacenamiento de datos.
+- Interfaz gráfica desarrollada con **PySide6** (Qt).
 - Visualización de registros en tabla dinámica.
 - Generación de reportes **PDF** con logotipo, fecha actual y listado de productos (ReportLab).
 
@@ -35,16 +36,31 @@ Disponible como ejecutable para **Windows** y como paquete `.deb` para distribuc
 - ReportLab
 
 **Backend**
-- Python
+- Python 3.13.7
 
 **Base de datos**
 - MariaDB 12.0.2
 
-## Requerimientos
+#### Requerimientos
 - [Python 3.13.7](https://download.oracle.com/java/23/archive/jdk-23.0.1_windows-x64_bin.exe)
+- [pip](https://pypi.org/project/pip/)
 - [MariaDB 12.0.2](https://mariadb.org/download/)
 
 ## Instalación
+
+### Windows
+- Copia y ejecuta el [esquema](database/scheme.sql) que se encuentra en el repositorio.
+- Crea al usuario para el programa ejecutando la instrucción [seed](database/seed.sql).
+
+Instala PySide6 y las librerías necesarias.
+```bash
+pip install pyside6 mariadb reportlab PyPDF2 pyinstaller
+```
+
+#### 2. Descargar el proyecto
+Puedes descargar la versión más reciente de Mini Inventario 2 desde [GitHub Releases](https://github.com/mendozarojasdev/mini-inventario-python/releases/latest).
+- Puedes colocar el ejecutable `.exe` en una ubicación p. ej. `C:\Program Files\Mini Inventario 2` y crear un acceso directo en el escritorio.
+
 
 ### 1. Crear base de datos
 - Abre la consola de MariaDB
