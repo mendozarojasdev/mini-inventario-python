@@ -12,11 +12,12 @@ Disponible como ejecutable `.exe` para **Windows** y como paquete `.deb` para di
 - [Licencia](#licencia)
 
 ## Características principales
-- CRUD de productos (Crear, Leer, Actualizar, Eliminar).
-- Conexión a MariaDB para almacenamiento de datos.
+- **CRUD** de productos (Crear, Leer, Actualizar, Eliminar).
+- Conexión a **MariaDB** para almacenamiento de datos.
 - Interfaz gráfica desarrollada con **PySide6** (Qt).
 - Visualización de registros en tabla dinámica.
 - Generación de reportes **PDF** con logotipo, fecha actual y listado de productos (ReportLab).
+- Integración con menú de aplicaciones en **Linux** (.desktop incluido).
 
 ## Screenshots
 
@@ -55,7 +56,7 @@ Disponible como ejecutable `.exe` para **Windows** y como paquete `.deb` para di
 
 #### 2. Instala PySide6 y las librerías necesarias.
 ```bash
-pip install pyside6 mariadb reportlab PyPDF2 pyinstaller
+pip install pyside6 mariadb reportlab PyPDF2
 ```
 
 #### 3. Descargar el proyecto
@@ -65,12 +66,12 @@ pip install pyside6 mariadb reportlab PyPDF2 pyinstaller
 ### Linux (Probado en Ubuntu)
 
 #### 1. Crear base de datos
-- Copia y ejecuta el [esquema](database/scheme.sql) que se encuentra en el repositorio.
-- Crea al usuario para el programa ejecutando la instrucción [seed](database/seed.sql).
-Asegúrate de tener instalado las librerías de MariaDB.
+- Asegúrate de tener instalado las librerías de MariaDB.
 ```bash
 sudo apt install libmariadb-dev
 ```
+- Copia y ejecuta el [esquema](database/scheme.sql) que se encuentra en el repositorio.
+- Crea al usuario para el programa ejecutando la instrucción [seed](database/seed.sql).
 
 #### 2. Instalar librerías de Python
 Instala las librerías de Python necesarias con el siguiente comando.
@@ -86,8 +87,19 @@ Puedes descargar el paquete `.deb` más reciente de Mini Inventario 2 desde [Git
 ```bash
 sudo dpkg -i mini_inventario_2.deb
 ```
+✅ Listo, ahora podrás iniciar la aplicación desde el menú de aplicaciones.
 
-✅ Listo, ahora podrás continuar con el desarrollo del proyecto.
+#### 5. Configuración (opcional)
+Es posible Ajustar el formato de precios (0.00 en lugar de 0,00).
+- Edita el archivo `/etc/locale.gen` y descomenta `es_MX.UTF-8 UTF-8`
+- Generar locales
+```bash
+sudo locale-gen
+```
+- Establecer el locale del sistema:
+```bash
+sudo localectl set-locale LANG=es_MX.UTF-8
+```
 
 ## Licencia
 Mini Inventario 2 está publicado bajo la licencia MIT. Consulta el archivo [MIT license](https://github.com/mendozarojasdev/mini-inventario-python/blob/master/LICENSE) para más información.
