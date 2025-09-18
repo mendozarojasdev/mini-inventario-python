@@ -68,12 +68,13 @@ pip install pyside6 mariadb reportlab PyPDF2
 ### Linux (Probado en Ubuntu)
 
 #### 1. Crear base de datos
-- Asegúrate de tener instalado las librerías de MariaDB.
+Asegúrate de tener instalado las librerías de MariaDB.
 ```bash
 sudo apt install libmariadb-dev
 ```
-- Copia y ejecuta el [esquema](database/scheme.sql) que se encuentra en el repositorio.
-- Crea al usuario para el programa ejecutando la instrucción [seed](database/seed.sql).
+Copia y ejecuta el [esquema](database/scheme.sql) que se encuentra en el repositorio.
+
+Crea al usuario para el programa ejecutando la instrucción [seed](database/seed.sql).
 
 #### 2. Instalar librerías de Python
 Instala las librerías de Python necesarias con el siguiente comando.
