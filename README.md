@@ -1,5 +1,6 @@
 # Mini Inventario 2
-Sistema para control de productos alimenticios desarrollado en Java con CRUD completo y generación de reportes en PDF.
+Sistema para control de productos alimenticios desarrollado en Python con **CRUD** completo y generación de reportes en **PDF**.
+
 Disponible como portable para **Windows** y como paquete `.deb` para distribuciones **Linux** basadas en **Debian**.
 
 ## Tabla de contenido
