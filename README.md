@@ -85,7 +85,7 @@ sudo apt install python3 python3-venv python3-pip
 Puedes descargar el paquete `.deb` más reciente de Mini Inventario 2 desde [GitHub Releases](https://github.com/mendozarojasdev/mini-inventario-python/releases/latest).
 
 #### 4. Instalar el paquete
-- Instala el paquete .deb con el siguiente comando.
+Instala el paquete .deb con el siguiente comando.
 ```bash
 sudo dpkg -i mini_inventario_2.deb
 ```
@@ -94,12 +94,12 @@ sudo dpkg -i mini_inventario_2.deb
 
 #### 5. Configuración (opcional)
 Es posible Ajustar el formato de precios (0.00 en lugar de 0,00).
-- Edita el archivo `/etc/locale.gen` y descomenta `es_MX.UTF-8 UTF-8`
-- Generar locales
+Edita el archivo `/etc/locale.gen` y descomenta `es_MX.UTF-8 UTF-8`
+Generar locales
 ```bash
 sudo locale-gen
 ```
-- Establecer el locale del sistema:
+Establecer el locale del sistema:
 ```bash
 sudo localectl set-locale LANG=es_MX.UTF-8
 ```
