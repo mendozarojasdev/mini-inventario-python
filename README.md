@@ -3,6 +3,8 @@ Sistema para control de productos alimenticios desarrollado en Python con **CRUD
 
 Disponible como portable para **Windows** y como paquete `.deb` para distribuciones **Linux** basadas en **Debian**.
 
+  👉 También disponible en [versión Java](https://github.com/mendozarojasdev/mini-inventario-java).
+
 ## Tabla de contenido
 - [Características principales](#características-principales)
 - [Screenshots](#screenshots)
